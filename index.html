@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>HTML Template til React</title>
+  </head>
+  <body>
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+      	// Her skal du indsætte din react kode
+		const Example = () => {
+			return (
+				<h1>Hej verden</h1>
+			)
+		}
+
+		const JSXWithExpression = () => {
+			return (
+				<div>JSX er {5*2} gange bedre end HTML</div>
+			)
+		}
+
+        const Printh2 = () => {
+            return (
+                <h2>JSX er godt for maven!</h2>
+            )
+        }
+
+        const Calcfunction = () => {
+            return (
+                <h2>Summen af 10 gange 10 er {10 * 10}</h2>
+            )
+        }
+
+        const Favortiedishes = () => {
+            return (
+                <ol>
+                    <li>Pizza</li>
+                    <li>Lassagne</li>
+                    <li>Stegt flæsk med persillesovs</li>
+                    <li>Pandekager</li>
+                    <li>Burgerer</li>
+                </ol>
+            )
+        }
+
+        const Twosections = () => {
+            return (
+                <div>
+                    <section>Afsnit 1
+                        <p>Afsnit 1 er et kedeligt afsnit</p>
+                    </section>
+                    <section>Afsnit 2
+                        <p>Afsnit 2 er et meget bedre afsnit</p>
+                    </section>
+                </div>
+            )
+        }
+
+        const Fragmentsections = () => {
+            return (
+                <>
+                <section>Afsnit 1
+                        <p>Afsnit 1 er et kedeligt afsnit</p>
+                    </section>
+                    <section>Afsnit 2
+                        <p>Afsnit 2 er et meget bedre afsnit</p>
+                    </section>
+                </>
+            )
+        }
+
+        const Inputcomponent = () => {
+            return (
+                <input type="search" name="" id=""></input>
+            )
+        }
+
+        const Sectionwithclass = () => {
+            return (
+                <section className="mainwrapper">Section with class</section>
+            )
+        }
+
+        const x = 5
+
+        const myelement = <h1>{(x) < 10  ? "Goddag" : "Farvel"}</h1>
+
+        const Comparetime = () => {
+            return (
+                myelement
+            )
+        }
+
+        const Callotherfunctions = () => {
+     
+            
+            return (
+                <>
+                <Example/>,
+                <JSXWithExpression/>,
+                <Printh2/>,
+                <Calcfunction/>,
+                <Favortiedishes/>,
+                <Twosections/>,
+                <Fragmentsections/>,
+                <Inputcomponent/>,
+                <Sectionwithclass/>
+                </>
+            )
+        }
+
+		
+
+		ReactDOM.render(
+			<Callotherfunctions />,
+			document.getElementById('root')
+		)
+    </script>
+
+  </body>
+</html>
